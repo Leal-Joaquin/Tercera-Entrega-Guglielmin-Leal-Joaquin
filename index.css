@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.body-producto{
+    position: relative;
+    padding-top: 90px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/productos/fondo.jpeg);
+    background-position: center center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+.sesion{
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background-image: url(./assets/sesion/sesion1.jpg);
+    background-position: center center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.body-home{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: bisque;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(38, 38, 38);
+    border-bottom: solid 1px black;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav-a{
+    margin: 0 5px;
+    padding: 0px 10px;
+    font-size: 25px;
+    border: solid 1px rgb(252, 250, 250);
+    border-radius: 20px;
+    
+} 
+.nav-a:visited{
+    
+    color: rgb(186, 181, 181);
+}
+.nav-a:hover{
+    color:rgb(242, 239, 239);
+    transform: translateY(-3%);
+}
+.nav-a:active{
+    color: red;
+}
+h1{
+    color: brown;
+    margin: 0 20px;
+    font-size: 40px;
+    transition: all 300ms ease;
+}
+h1:hover{
+    transform: translateY(-3%);
+    font-size: 50px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.logos{
+    height: 70px;
+    width: 70px;
+    border-radius: 15px;
+}
+
+/* Inicio de sesion */
+
+form{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: #EEEEEE;
+}
+.h2-sesion{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #2E2E2E;
+    margin-bottom:25px;
+}
+label, p{
+ font-size: 17px;
+ color: #575757;
+ margin-bottom: 10px;
+}
+input{
+    padding: 17px 11px;
+    border: 1px solid #00ADEF;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    background-color: #FAFAFC;
+    outline: none;
+    color: #00ADEF;
+    font-size: 16px;
+}
+.btn-1{
+    padding: 17px 11px;
+    border: 1px solid #00ADEF;
+    border-radius: 25px;
+    background-color: #00ADEF;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color: #04BBFF ;
+}
+.remember{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:25px ;
+}
+@media(max-width: 600px){
+    body{
+        padding: 30px;
+    }
+    form{
+        width: 100%;
+    }
+    .remember{
+        flex-direction: column;
+    }
+}
+/* Almacen */
+.body-almacen{
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top:40px ;
+    background-image: url(./assets/almacen/fondo3.jpeg);
+    background-position: center center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* cards */
+.container-card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.card{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(135, 133, 133, 0.4);
+    cursor: pointer;
+    transition: all 400ms ease;
+    background-color: #cfcdcd;
+}
+.card-contenido{
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    text-align: left;
+}
+.card:hover{
+    box-shadow: 0 0 20px rgba(210, 208, 208, 0.8);
+}
+.card-img{
+    width: 100%;
+    border-radius: 20px;
+}
+.img-card{
+    width: 100%;
+    transition: all 400ms ease;
+    border-radius: 6px;
+    border-bottom: solid 1px  black;
+}
+.img-card:hover{
+    transform: translateY(-3%);
+}
+.card-contenido{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.h2-card{
+    font-size: 30px;
+    margin: 10px;
+}
+.h3-card{
+    margin: 5px;
+    font-size: 25px;
+}
+.p-card{
+    margin: 5px;
+    font-size: 20px;
+}
+.container-card p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+.container-card h2{
+    font-weight: 400;
+    margin: 15px;
+}
+.btn-2{
+    width: 100px;
+    margin-bottom: 20px;
+    padding: 17px 11px;
+    border: 1px solid #00ADEF;
+    border-radius: 25px;
+    background-color: #00ADEF;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: #04BBFF ;
+}
+
+/* FOOTER */
+
+.footer{
+    border-top: solid 1px black;
+    width: 100%;
+    background-color: rgb(38, 38, 38);
+    margin-top: auto;
+}
+.grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.grupo-1 figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grupo-1 figure img{
+    width: 250px;
+}
+.grupo-1 .h2-footer{
+    color: #020202;
+    margin-bottom:25px ;
+    font-size: 25px;
+}
+.grupo-1 .p-footer{
+    color: #d2d0d0;
+    margin-bottom: 10px;
+}
+.red-social a{
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px; 
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(53, 52, 52);
+    text-align: center;
+    transition: all 300ms ease;
+}
+.red-social a:hover{
+    box-shadow: 0 0 20px rgba(206, 198, 198, 0.4);
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.footer .grupo-2{
+    background-color: rgb(53, 52, 52);
+    padding: 15px 10px;
+    text-align: center;
+}
+.footer .grupo-2 small{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
