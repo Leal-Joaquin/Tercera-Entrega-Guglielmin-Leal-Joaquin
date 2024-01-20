@@ -1,19 +1,16 @@
-console.log("Hola mundo")
-
 // Inicio de Sesion
-
 const BBDD = [
     {
-        usuario: "daniel",
-        contraseña: "1123patito"
+        usuario: "joaquin",
+        contraseña: "123patito"
     },
     {
         usuario: "pedro123",
-        contraseña: "1pedro123"
+        contraseña: "pedro123"
     },
     {
-        usuario: "1martin",
-        contraseña: "1123456"
+        usuario: "martin",
+        contraseña: "123456"
     }
 ]
 
@@ -46,12 +43,13 @@ botonIniciar.addEventListener("click", () => {
 
     if (siExiste !== undefined) {
         localStorage.setItem("isLog", JSON.stringify ({usuario: usuarioALoguear.usuario}))
-        contenedor.innerHTML = `<h1>Bienvenido de nuevo sr/sra <strong> ${siExiste.usuario} </strong> </h1>`
+        contenedor.innerHTML = `<h4>Bienvenido de nuevo sr/sra <strong> ${siExiste.usuario} </strong> </h4>`
     } else {
         console.log("quien te conoce")
     }
 
 })
+
 
 function cargarProducto(producto){
 
@@ -76,7 +74,6 @@ function cargarProducto(producto){
 }
 const PRODUCTOS = cargarProducto();
 console.log(PRODUCTOS)
-
 
 
 
