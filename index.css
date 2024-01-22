@@ -77,7 +77,6 @@ h1{
 }
 h1:hover{
     transform: translateY(-3%);
-    font-size: 50px;
 }
 .logo{
     display: flex;
